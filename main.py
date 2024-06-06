@@ -1,13 +1,21 @@
-"""
-Main.
+while True:
+    print("Welcome to Math Test Masterming")
+    print(
+        "Choose a topic to work on: \n - (G)eneral Subjects Quiz \n - (A)lgebra \n - (P)robability \n - (B)asic Arithmetic \n - (Q)uit",
+        "\n - (Q)uit ",
+    )
 
-Created by: NAME
-Date: DATE
-"""
-
-# Enter your code here
-name: str = input("Enter your name: ")
-if name:
-    print(f"Hello, {name}!")
-else:
-    print("Error getting name.")
+    topic = input("What topic would you like to study?")
+    if topic.upper() == "G":
+        general_subjects_qui()
+    elif topic.upper() == "A":
+        algebra()
+    elif topic.upper() == "P":
+        probability()
+    elif topic.upper() == "B":
+        basic_arithmetic()
+    elif topic.upper() == "Q":
+        print("Goodbye.")
+        break
+    else:
+        print("Please enter G, A, P, B orQ!")
