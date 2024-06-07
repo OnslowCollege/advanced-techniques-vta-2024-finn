@@ -5,7 +5,7 @@ while True:
         "\n - (Q)uit ",
     )
 
-    topic = input("What topic would you like to study?")
+    topic = input("What topic would you like to study: ")
     if topic.upper() == "G":
         general_subjects_quiz()
     elif topic.upper() == "A":
