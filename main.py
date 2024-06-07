@@ -1,4 +1,8 @@
-general_su
+"""Math Test Mastermind."""
+
+def general_topics_quiz():
+    """Quiz for all topics and levels of those topics."""
+
 
 
 
