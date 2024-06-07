@@ -7,7 +7,7 @@ while True:
 
     topic = input("What topic would you like to study?")
     if topic.upper() == "G":
-        general_subjects_qui()
+        general_subjects_quiz()
     elif topic.upper() == "A":
         algebra()
     elif topic.upper() == "P":
@@ -18,4 +18,4 @@ while True:
         print("Goodbye.")
         break
     else:
-        print("Please enter G, A, P, B orQ!")
+        print("Please enter G, A, P, B or Q!")
