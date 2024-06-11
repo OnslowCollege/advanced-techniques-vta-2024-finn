@@ -21,7 +21,7 @@ def basic_arithmetic():
 while True:
     print("Welcome to Math Test Masterming")
     print(
-        "Choose a topic to work on: \n - (G)eneral Topics Quiz \n - (A)lgebra \n - (P)robability \n - (B)asic Arithmetic \n - (Q)uit",
+        "Choose a topic to work on: \n____________________\n - (G)eneral Topics Quiz \n - (A)lgebra \n - (P)robability \n - (B)asic Arithmetic \n - (Q)uit",
         "\n - (Q)uit ",
     )
 
