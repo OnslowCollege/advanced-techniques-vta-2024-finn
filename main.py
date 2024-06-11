@@ -2,14 +2,18 @@
 
 def general_topics_quiz():
     """Quiz for all topics and levels of those topics."""
+    print("Test general topics quiz")
 
 def algebra():
-    """Algebra topic."""
+    """Start Algebra topic."""
+    print("Test algebra")
 def probability():
-    """Probability topic."""
+    """Start Probability topic."""
+    print("Test probability")
 
 def basic_arithmetic():
-    """Basic arithmetic topic."""
+    """Start Basic Arithmetic topic."""
+    print("Test basic arithmetic")
 
 
 
