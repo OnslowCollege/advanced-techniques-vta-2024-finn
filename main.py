@@ -3,6 +3,14 @@
 def general_topics_quiz():
     """Quiz for all topics and levels of those topics."""
 
+def algebra():
+    """Algebra topic."""
+def probability():
+    """Probability topic."""
+
+def basic_arithmetic():
+    """Basic arithmetic topic."""
+
 
 
 
