@@ -19,7 +19,7 @@ def basic_arithmetic():
 
 
 while True:
-    print("Welcome to Math Test Masterming \n----------------------------- ")
+    print("Welcome to Math Test Mastermind \n----------------------------- ")
     print(
         "Choose a topic to work on: \n -",
         "(G)eneral Topics Quiz \n - (A)lgebra \n - (P)robability", 
