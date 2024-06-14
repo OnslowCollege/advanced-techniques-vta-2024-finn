@@ -1,6 +1,7 @@
 """Math Test Mastermind."""
 questions: dict[str, dict[str, str]] = {
     "Algebra_1": {"2x=4": "x=2"}
+
 }
 
 
@@ -18,7 +19,7 @@ def algebra(Question_info: dict[str, str]):
 
     """
     print("Test algebra")
-    
+
 
 def probability():
     """Start Probability topic."""
@@ -43,7 +44,7 @@ while True:
     if topic.upper() == "G":
         general_topics_quiz()
     elif topic.upper() == "A":
-        algebra()
+        algebra(questions["Algebra_1"])
     elif topic.upper() == "P":
         probability()
     elif topic.upper() == "B":
