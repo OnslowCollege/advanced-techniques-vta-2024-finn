@@ -8,15 +8,17 @@ def general_topics_quiz():
     """Quiz for all topics and levels of those topics."""
     print("Test general topics quiz")
 
-def algebra(Question_info):
+def algebra(Question_info: dict[str, str]):
     """
     Start Algebra topic.
     
     Parameters
     ----------
-    -   Question_info
+    -   Question_info: Gives the questions for the user to answer.
+
     """
     print("Test algebra")
+    
 
 def probability():
     """Start Probability topic."""
