@@ -32,7 +32,7 @@ def probability(Question_info: dict[str, str]):
     """Start Probability topic."""
     print("Test probability")
 
-def basic_arithmetic():
+def basic_arithmetic(Question_info: dict[str, str]):
     """Start Basic Arithmetic topic."""
     print("Test basic arithmetic")
 
@@ -55,7 +55,7 @@ while True:
     elif topic.upper() == "P":
         probability(questions["Probability_1"])
     elif topic.upper() == "B":
-        basic_arithmetic()
+        basic_arithmetic(questions["Basic_A_1"])
     elif topic.upper() == "Q":
         print("Goodbye.")
         break
