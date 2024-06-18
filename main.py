@@ -12,9 +12,11 @@ questions: dict[str, dict[str, str]] = {
 }
 
 
-def general_topics_quiz():
+def general_topics_quiz(Question_info: dict[str, str]):
     """Quiz for all topics and levels of those topics."""
     print("Test general topics quiz")
+
+
 
 def algebra(Question_info: dict[str, str]):
     """
@@ -28,6 +30,7 @@ def algebra(Question_info: dict[str, str]):
     print("Test algebra")
 
 
+
 def probability(Question_info: dict[str, str]):
     """
     Start Algebra topic.
@@ -38,6 +41,8 @@ def probability(Question_info: dict[str, str]):
 
     """
     print("Test probability")
+
+
 
 def basic_arithmetic(Question_info: dict[str, str]):
     """
