@@ -63,15 +63,17 @@ def basic_arithmetic(Question_info: dict[str, str]):
     print("Test probability")
 
 
-def select_level():
+def select_level(topic):
     while True:
-        print("\nSelect a level for {}: ".format(topic))
+        print("Select a level for {}: ".format(topic))
         print("1. Easy")
         print("2. Medium")
         print("3. Hard")
         level = input("Enter the level number (1-3): ")
         if level in ["", "2", "3"]:
             return topic + "_" + level
+        if level == 1
+
 
 
 
@@ -87,7 +89,7 @@ while True:
 
     topic = input("What topic would you like to study: ")
     if topic.upper() == "G":
-        select_level()
+        select_level(topic)
     elif topic.upper() == "A":
         algebra(questions["Algebra_1"])
     elif topic.upper() == "P":
