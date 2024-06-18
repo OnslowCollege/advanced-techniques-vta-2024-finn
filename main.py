@@ -55,3 +55,5 @@ while True:
         break
     else:
         print("Please enter G, A, P, B or Q!")
+
+        
