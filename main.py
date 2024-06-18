@@ -1,8 +1,14 @@
 """Math Test Mastermind."""
 questions: dict[str, dict[str, str]] = {
     "Algebra_1": {"2x=4": "x=2", "3x=9": "x=3", "x=12": "x=12"},
-    "Algebra_2": {"2x-2=6": "x=4"}
-
+    "Algebra_2": {"2x-2=6": "x=4"},
+    "Algebra_3": {"2x-2=6": "x=4"},
+    "Probability_1": {"1+1=2": "2"},
+    "Probability_2": {"1+1=2": "2"},
+    "Probability_3": {"1+1=2": "2"},
+    "Basic_A_1": {"3+9": "12"},
+    "Basic_A_2": {"3+9": "12"},
+    "Basic_A_3": {"3+9": "12"},
 }
 
 
@@ -22,7 +28,7 @@ def algebra(Question_info: dict[str, str]):
     print("Test algebra")
 
 
-def probability():
+def probability(Question_info: dict[str, str]):
     """Start Probability topic."""
     print("Test probability")
 
@@ -47,7 +53,7 @@ while True:
     elif topic.upper() == "A":
         algebra(questions["Algebra_1"])
     elif topic.upper() == "P":
-        probability()
+        probability(questions["Probability_1"])
     elif topic.upper() == "B":
         basic_arithmetic()
     elif topic.upper() == "Q":
@@ -56,4 +62,3 @@ while True:
     else:
         print("Please enter G, A, P, B or Q!")
 
-        
