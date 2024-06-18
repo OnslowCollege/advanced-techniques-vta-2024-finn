@@ -70,10 +70,9 @@ def select_level(topic):
         print("2. Medium")
         print("3. Hard")
         level = input("Enter the level number (1-3): ")
-        if level in ["1", "2", "3"]:
+        if level in ["", "2", "3"]:
             return topic + "_" + level
-        else:
-            print("Invalid input. Please enter a number between 1 and 3.")
+
 
 
 
@@ -88,7 +87,7 @@ while True:
 
     topic = input("What topic would you like to study: ")
     if topic.upper() == "G":
-        general_topics_quiz(questions["General_Topics_Quiz"])
+        general_topics_quiz(select_level)
     elif topic.upper() == "A":
         algebra(questions["Algebra_1"])
     elif topic.upper() == "P":
