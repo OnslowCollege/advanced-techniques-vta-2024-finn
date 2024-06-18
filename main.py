@@ -74,6 +74,9 @@ def select_level(topic):
             return topic + "_" + level
         else:
             print("Please enter a number between 1 and 3!")
+    elif level == "1":
+        
+
 
 
 
