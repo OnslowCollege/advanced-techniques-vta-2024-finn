@@ -29,12 +29,26 @@ def algebra(Question_info: dict[str, str]):
 
 
 def probability(Question_info: dict[str, str]):
-    """Start Probability topic."""
+    """
+    Start Algebra topic.
+    
+    Parameters
+    ----------
+    -   Question_info: Gives the questions for the user to answer.
+
+    """
     print("Test probability")
 
 def basic_arithmetic(Question_info: dict[str, str]):
-    """Start Basic Arithmetic topic."""
-    print("Test basic arithmetic")
+    """
+    Start Basic Arithmetic topic.
+    
+    Parameters
+    ----------
+    -   Question_info: Gives the questions for the user to answer.
+
+    """
+    print("Test probability")
 
 
 
