@@ -70,12 +70,10 @@ def select_level(topic):
         print("2. Medium")
         print("3. Hard")
         level = input("Enter the level number (1-3): ")
-        if level in ["", "2", "3"]:
+        if level in ["1", "2", "3"]:
             return topic + "_" + level
         else:
             print("Please enter a number between 1 and 3!")
-    elif level == "1":
-        
 
 
 
@@ -85,23 +83,27 @@ def select_level(topic):
 
 
 while True:
-    print("Welcome to Math Test Mastermind \n----------------------------- ")
+    print("Welcome to Math Test Mastermind \n----------------------------")
     print(
         "Choose a topic to work on: \n -",
         "(G)eneral Topics Quiz \n - (A)lgebra \n - (P)robability", 
         "\n - (B)asic Arithmetic \n - (Q)uit "
     )
 
-    topic = input("What topic would you like to study: ")
-    if topic.upper() == "G":
-        select_level(topic)
-    elif topic.upper() == "A":
-        algebra(questions["Algebra_1"])
-    elif topic.upper() == "P":
-        fractions(questions["Probability_1"])
-    elif topic.upper() == "B":
-        basic_arithmetic(questions["Basic_A_1"])
-    elif topic.upper() == "Q":
+    topic = input("What topic would you like to study: ").upper()
+    if topic == "G":
+        selected_level = select_level("General Topics")
+        general_topics_quiz(selected_level) 
+    elif topic == "A":
+        selected_level = select_level("Algebra")
+        algebra(questions[selected_level])
+    elif topic == "P":
+        selected_level = select_level("Probability")
+        fractions(questions[selected_level])  
+    elif topic == "B":
+        selected_level = select_level("Basic Arithmetic")
+        basic_arithmetic(questions[selected_level])
+    elif topic == "Q":
         print("Goodbye.")
         break
     else:
