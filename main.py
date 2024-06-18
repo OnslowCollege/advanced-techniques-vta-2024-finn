@@ -2,7 +2,7 @@
 questions: dict[str, dict[str, str]] = {
     "Algebra_1": {"2x=4": "x=2", "3x=9": "x=3", "x=12": "x=12"},
     "Algebra_2": {"2x-2=6": "x=4"},
-    "Algebra_3": {"2x-2=6": "x=4"},
+    "Algebra_3": {"4x+3=15": "x=15"},
     "Fractions_1": {"1+1=2": "2"},
     "Fractions_2": {"1+1=2": "2"},
     "Fractions_3": {"1+1=2": "2"},
@@ -86,26 +86,26 @@ while True:
     print("Welcome to Math Test Mastermind \n----------------------------")
     print(
         "Choose a topic to work on: \n -",
-        "(G)eneral Topics Quiz \n - (A)lgebra \n - (P)robability", 
+        "(G)eneral Topics Quiz \n - (A)lgebra \n - (F)ractions", 
         "\n - (B)asic Arithmetic \n - (Q)uit "
     )
 
     topic = input("What topic would you like to study: ").upper()
-    if topic == "G":
+    if topic.lower() == "g":
         selected_level = select_level("General Topics")
         general_topics_quiz(selected_level) 
-    elif topic == "A":
+    elif topic.lower() == "a":
         selected_level = select_level("Algebra")
         algebra(questions[selected_level])
-    elif topic == "P":
-        selected_level = select_level("Probability")
+    elif topic.lower() == "f":
+        selected_level = select_level("Fractions")
         fractions(questions[selected_level])  
-    elif topic == "B":
+    elif topic.lower() == "b":
         selected_level = select_level("Basic Arithmetic")
         basic_arithmetic(questions[selected_level])
-    elif topic == "Q":
+    elif topic.lower() == "q":
         print("Goodbye.")
         break
     else:
-        print("Please enter G, A, P, B or Q!")
+        print("Please enter G, A, F, B or Q!")
 
