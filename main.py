@@ -63,6 +63,19 @@ def basic_arithmetic(Question_info: dict[str, str]):
     print("Test probability")
 
 
+def select_level(topic):
+    while True:
+        print("\nSelect a level for {}: ".format(topic))
+        print("1. Easy")
+        print("2. Medium")
+        print("3. Hard")
+        level = input("Enter the level number (1-3): ")
+        if level in ["1", "2", "3"]:
+            return topic + "_" + level
+        else:
+            print("Invalid input. Please enter a number between 1 and 3.")
+
+
 
 
 while True:
