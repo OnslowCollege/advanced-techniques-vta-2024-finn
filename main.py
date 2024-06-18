@@ -5,7 +5,7 @@ questions: dict[str, dict[str, str]] = {
     "Algebra_3": {"2x-2=6": "x=4"},
     "Probability_1": {"1+1=2": "2"},
     "Probability_2": {"1+1=2": "2"},
-    "Probability_3": {"1+1=2": "2"},
+    "Probability_3": {"1+1=2": "2"},    
     "Basic_A_1": {"3+9": "12"},
     "Basic_A_2": {"3+9": "12"},
     "Basic_A_3": {"3+9": "12"},
