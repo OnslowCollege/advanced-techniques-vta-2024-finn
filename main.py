@@ -105,7 +105,7 @@ while True:
         general_topics_quiz(selected_level) 
     elif topic.lower() == "a":
         selected_level = select_level("Algebra")
-        algebra(questions[selected_level])
+        algebra()
     elif topic.lower() == "f":
         selected_level = select_level("Fractions")
         fractions(questions[selected_level])  
