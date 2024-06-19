@@ -1,15 +1,15 @@
 """Math Test Mastermind."""
-#questions: dict[str, dict[str, str]] = {
-#    "Algebra_1": {"2x=4": "x=2", "3x=9": "x=3", "x=12": "x=12"},
-#    "Algebra_2": {"2x-2=6": "x=4"},
-#    "Algebra_3": {"4x+3=15": "x=15"},
-#    "Fractions_1": {"": "2"},
-#    "Fractions_2": {"1+1=2": "2"},
-#    "Fractions_3": {"1+1=2": "2"},
-#    "Basic_A_1": {"3+9": "12"},
-#    "Basic_A_2": {"3+9": "12"},
-#    "Basic_A_3": {"3+9": "12"},
-#}
+questions: dict[str, dict[str, str]] = {
+    "Algebra_1": {"2x=4": "x=2", "3x=9": "x=3", "x=12": "x=12"},
+    "Algebra_2": {"2x-2=6": "x=4"},
+    "Algebra_3": {"4x+3=15": "x=15"},
+    "Fractions_1": {"": "2"},
+    "Fractions_2": {"1+1=2": "2"},
+    "Fractions_3": {"1+1=2": "2"},
+    "Basic_A_1": {"3+9": "12"},
+    "Basic_A_2": {"3+9": "12"},
+    "Basic_A_3": {"3+9": "12"},
+}
 
 
 def general_topics_quiz(Question_info: dict[str, str]):
@@ -105,7 +105,7 @@ while True:
         general_topics_quiz(selected_level) 
     elif topic.lower() == "a":
         selected_level = select_level("Algebra")
-        algebra()
+        algebra(questions[selected_level])
     elif topic.lower() == "f":
         selected_level = select_level("Fractions")
         fractions(questions[selected_level])  
