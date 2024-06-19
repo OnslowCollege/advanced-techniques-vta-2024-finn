@@ -79,7 +79,7 @@ def select_level(topic):
         print("2. Medium")
         print("3. Hard")
         level = input("Enter the level number (1-3): ")
-        if level in ["1", "2", "3"]:
+        if level in [1, 2, 3]:
             return topic + "_" + level
         else:
             print("Please enter a number between 1 and 3!")
