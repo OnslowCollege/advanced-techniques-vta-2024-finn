@@ -3,7 +3,7 @@ questions: dict[str, dict[str, str]] = {
     "Algebra_1": {"2x=4": "x=2", "3x=9": "x=3", "x=12": "x=12"},
     "Algebra_2": {"2x-2=6": "x=4"},
     "Algebra_3": {"4x+3=15": "x=15"},
-    "Fractions_1": {"1+1=2": "2"},
+    "Fractions_1": {"": "2"},
     "Fractions_2": {"1+1=2": "2"},
     "Fractions_3": {"1+1=2": "2"},
     "Basic_A_1": {"3+9": "12"},
@@ -47,7 +47,17 @@ def fractions(Question_info: dict[str, str]):
     -   Question_info: Gives the questions for the user to answer.
 
     """
-    print("Test probability")
+    print("Fractions Quiz")
+    correct_answers = 0
+    for question, answer in Question_info.items():
+        user_answer = input(question + " = ")
+        if user_answer == answer:
+            print("Correct!")
+            correct_answers += 1
+        else:
+            print("Incorrect. The correct answer is:", answer)
+    
+    print(f"You got {correct_answers} out of {len(Question_info)} questions correct.")
 
 
 
