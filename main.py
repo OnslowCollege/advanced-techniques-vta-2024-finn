@@ -3,7 +3,7 @@ questions: dict[str, dict[str, str]] = {
     "Algebra_1": {"2x=4": "x=2", "3x=9": "x=3", "x=12": "x=12"},
     "Algebra_2": {"2x-2=6": "x=4"},
     "Algebra_3": {"4x+3=15": "x=15"},
-    "Fractions_1": {"1/2+1/2": "1", "1/3+1/3"},
+    "Fractions_1": {"1/2+1/2": "1", "1/3+1/3": "2/3"},
     "Fractions_2": {"1+1=2": "2"},
     "Fractions_3": {"1+1=2": "2"},
     "Basic_A_1": {"3+9": "12"},
@@ -83,12 +83,6 @@ def select_level(topic):
             return topic + "_" + level
         else:
             print("Please enter a number between 1 and 3!")
-
-
-
-
-
-
 
 
 while True:
