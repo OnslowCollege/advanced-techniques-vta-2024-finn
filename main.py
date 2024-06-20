@@ -101,7 +101,7 @@ while True:
 
     topic = input("What topic would you like to study: ").upper()
     if topic.lower() == "g":
-        selected_level = select_level("General Topics")
+        selected_level = ("General Topics")
         general_topics_quiz(selected_level) 
     elif topic.lower() == "a":
         selected_level = select_level("Algebra")
