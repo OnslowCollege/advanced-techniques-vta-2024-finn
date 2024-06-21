@@ -48,7 +48,7 @@ def fractions(Question_info: dict[str, str]):
     """
     print("Fractions Quiz")
     correct_answers = 0
-    for question in answer in Question_info.items():
+    for question, answer in Question_info.items():
         user_answer = input(question + " = ")
         if user_answer == answer:
             print("Correct!")
