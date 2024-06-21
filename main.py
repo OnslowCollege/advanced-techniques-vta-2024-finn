@@ -37,7 +37,7 @@ def algebra(Question_info: dict[str, str]):
     correct_answers = 0
     for question in Question_info:
         answer = Question_info[question]
-        user_answer = input(f"{question} = ")
+        user_answer = input(f"{question}:  ")
         if user_answer == answer:
             print("Correct!")
             correct_answers += 1
