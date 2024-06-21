@@ -1,7 +1,7 @@
 """Math Test Mastermind."""
 questions: dict[str, dict[str, str]] = {
-    "Algebra_1": {" if 2x=4 what is x?": "2", "if 3x=9 what is x?": "x=3", "if x=12 what is x?": "x=12"},
-    "Algebra_2": {"2x-2=6": "x=4"},
+    "Algebra_1": {"If 2x=4 what is x?": "2", "If 3x=9 what is x?": "x=3", "If x=12 what is x?": "x=12"},
+    "Algebra_2": {"If 2x-2=6 what is x?": "x=4"},
     "Algebra_3": {"4x+3=15": "x=3"},
     "Fractions_1": {"1/2+1/2": "1", "1/3+1/3": "2/3"},
     "Fractions_2": {"2/3x1/3": "2/9"},
