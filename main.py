@@ -8,7 +8,7 @@ questions: dict[str, dict[str, str]] = {
     "Fractions_3": {"11/3÷2/3": "5/2"},
     "Basic_A_1": {"3+9": "12"},
     "Basic_A_2": {"4x7": "28"},
-    "Basic_A_3": {"8x7": "56"},
+    "Basic_A_3": {"8x7+2": "58"},
 }
 
 
@@ -48,7 +48,7 @@ def fractions(Question_info: dict[str, str]):
     """
     print("Fractions Quiz")
     correct_answers = 0
-    for question, answer in Question_info.items():
+    for question in answer in Question_info.items():
         user_answer = input(question + " = ")
         if user_answer == answer:
             print("Correct!")
