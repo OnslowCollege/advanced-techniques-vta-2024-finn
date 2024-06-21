@@ -34,6 +34,15 @@ def algebra(Question_info: dict[str, str]):
 
     """
     print("Test algebra")
+    correct_answers = 0
+    for question, answer in Question_info.items():
+        user_answer = input(question + " = ")
+        if user_answer == answer:
+            print("Correct!")
+            correct_answers += 1
+        else:
+            print("Incorrect. The correct answer is:", answer)
+    print(f"You got {correct_answers} out of {len(Question_info)} questions correct.")
 
 
 
