@@ -31,7 +31,7 @@ def algebra(Question_info: dict[str, str]):
     Parameters
     ----------
     -   Question_info: Gives the questions for the user to answer.
-
+    
     """
     print("Test algebra")
     correct_answers = 0
