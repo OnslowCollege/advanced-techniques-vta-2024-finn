@@ -12,6 +12,7 @@ questions: dict[str, dict[str, str]] = {
 }
 
 
+
 def general_topics_quiz(Question_info: dict[str, str]):
     """
     Start All topics quiz.
@@ -22,6 +23,7 @@ def general_topics_quiz(Question_info: dict[str, str]):
 
     """
     print("Test algebra")
+
 
 
 def algebra(Question_info: dict[str, str]):
@@ -44,8 +46,6 @@ def algebra(Question_info: dict[str, str]):
             print(f"Incorrect. The correct answer is: {answer}")
 
     print(f"You got {correct_answers} out of {len(Question_info)} questions correct.")
-
-
 
 
 
@@ -85,6 +85,7 @@ def basic_arithmetic(Question_info: dict[str, str]):
     print("Test probability")
 
 
+
 def select_level(topic):
     while True:
         print("Select a level for {}: ".format(topic))
@@ -96,6 +97,7 @@ def select_level(topic):
             return topic + "_" + level
         else:
             print("Please enter a number between 1 and 3!")
+
 
 
 while True:
@@ -124,4 +126,3 @@ while True:
         break
     else:
         print("Please enter G, A, F, B or Q!")
-
