@@ -69,7 +69,7 @@ def fractions(Question_info: dict[str, str]):
         else:
             print(f"Incorrect. The correct answer is: {answer}")
 
-    print(f"You got {correct_answers} out of {len(Question_info)} questions correct.")
+    print(f"You got {correct_answers} out of {len(Question_info)} questions correct!")
 
 
 
