@@ -1,7 +1,7 @@
 """Math Test Mastermind."""
 questions: dict[str, dict[str, str]] = {
     "Algebra_1": {"If 2x=4 what is x?": "2", "If 3x=9 what is x?": "x=3", "If x=12 what is x?": "x=12"},
-    "Algebra_2": {"If 2x-2=6 what is x?": "x=4"},
+    "Algebra_2": {"If 2x-2=6 what is x?": "4"},
     "Algebra_3": {"4x+3=15": "x=3"},
     "Fractions_1": {"1/2+1/2": "1", "1/3+1/3": "2/3"},
     "Fractions_2": {"2/3x1/3": "2/9"},
@@ -22,7 +22,7 @@ def general_topics_quiz(Question_info: dict[str, str]):
     -   Question_info: Gives the questions for the user to answer.
 
     """
-    print("Test algebra")
+    print("Test general topics quiz")
 
 
 
@@ -45,7 +45,7 @@ def algebra(Question_info: dict[str, str]):
         else:
             print(f"Incorrect. The correct answer is: {answer}")
 
-    print(f"You got {correct_answers} out of {len(Question_info)} questions correct.")
+    print(f"You got {correct_answers} out of {len(Question_info)} questions correct!")
 
 
 
@@ -110,7 +110,6 @@ while True:
 
     topic = input("What topic would you like to study: ").upper()
     if topic.lower() == "g":
-        selected_level = select_level("General Topics")
         general_topics_quiz(selected_level) 
     elif topic.lower() == "a":
         selected_level = select_level("Algebra")
