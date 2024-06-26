@@ -13,7 +13,7 @@ questions: dict[str, dict[str, str]] = {
 
 
 
-def general_topics_quiz(Question_info: dict[str, str]):
+def general_topics_quiz():
     """
     Start All topics quiz.
 
