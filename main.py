@@ -23,7 +23,7 @@ def general_topics_quiz(hearts):
     """
     print("Test general topics quiz")
     correct_answers = 0
-    for question in questions:
+    for question in Question_info:
         answer = questions[question]
         user_answer = input(f"{question}:  ")
         if user_answer == answer:
