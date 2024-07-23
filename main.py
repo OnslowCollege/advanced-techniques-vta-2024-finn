@@ -10,7 +10,6 @@ questions: dict[str, dict[str, str]] = {
     "Basic_A_2": {"4x7": "28"},
     "Basic_A_3": {"8x7+2": "58"},
 }
-hearts = 5
 
 
 def general_topics_quiz():
@@ -99,7 +98,7 @@ def select_level(topic):
             print("Please enter a number between 1 and 3!")
 
 
-
+hearts = 5
 while True:
     print("Welcome to Math Test Mastermind \n----------------------------")
     print(
@@ -125,3 +124,7 @@ while True:
         break
     else:
         print("Please enter G, A, F, B or Q!")
+    
+    print(f"You have {hearts} hearts left.")
+    if hearts <= 0:
+        break
