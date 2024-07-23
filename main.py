@@ -103,7 +103,22 @@ def basic_arithmetic(Question_info: dict[str, str]):
     -   Question_info: Gives the questions for the user to answer.
 
     """
-    print("Test probability")
+    print("Basic Arithmetic Quiz")
+    correct_answers = 0
+    for question in Question_info:
+        answer = Question_info[question]
+        user_answer = input(f"{question} = ")
+        if user_answer == answer:
+            print("Correct!")
+            correct_answers += 1
+            if hearts < 5:
+                hearts += 1
+        else:
+            print(f"Incorrect. The correct answer is: {answer}")
+            hearts -= 1
+        if hearts <= 0:
+            print("You have no more hearts left. Game over!")
+            break
 
 
 
