@@ -31,12 +31,12 @@ def algebra(Question_info: dict[str, str], hearts: int) -> int:
     
     Parameter
     ---------
-    - Gives the questions for the user to answer.
-    - Current number of hearts the user has.
+    - Question_info: Gives the questions for the user to answer.
+    - hearts: Current number of hearts the user has.
 
     Return
     ------
-    - New number of hearts.
+    - New heart balance.
 
     """
     correct_answers = 0
@@ -65,8 +65,8 @@ def fractions(Question_info: dict[str, str], hearts: int) -> int:
     
     Parameter
     ---------
-    - Gives the questions for the user to answer.
-    - Current number of hearts the user has.
+    - Question_info: Gives the questions for the user to answer.
+    - hearts: Current number of hearts the user has.
 
     Return
     ------
