@@ -12,7 +12,7 @@ questions: dict[str, dict[str, str]] = {
 }
 
 
-def general_topics_quiz():
+def general_topics_quiz(hearts):
     """
     Start All topics quiz.
 
@@ -22,6 +22,23 @@ def general_topics_quiz():
 
     """
     print("Test general topics quiz")
+    correct_answers = 0
+    for question in questions:
+        answer = questions[question]
+        user_answer = input(f"{question}:  ")
+        if user_answer == answer:
+            print("Correct!")
+            correct_answers += 1
+            if hearts < 5:
+                hearts += 1
+        else:
+            print(f"Incorrect. The correct answer is: {answer}")
+            hearts -= 1
+        if hearts <= 0:
+            print("You have no more hearts left. Game over!")
+            break
+
+
 
 
 
