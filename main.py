@@ -121,18 +121,18 @@ while True:
     )
 
     topic = input("What topic would you like to study: ").upper()
-    if topic.lower() == "g":
-        general_topics_quiz() 
-    elif topic.lower() == "a":
+    if topic == "G":
+        hearts = general_topics_quiz(hearts)
+    elif topic == "A":
         selected_level = select_level("Algebra")
-        algebra(questions[selected_level])
-    elif topic.lower() == "f":
+        hearts = algebra(questions[selected_level], hearts)
+    elif topic == "F":
         selected_level = select_level("Fractions")
-        fractions(questions[selected_level])  
-    elif topic.lower() == "b":
-        selected_level = select_level("Basic Arithmetic")
-        basic_arithmetic(questions[selected_level])
-    elif topic.lower() == "q":
+        hearts = fractions(questions[selected_level], hearts)
+    elif topic == "B":
+        selected_level = select_level("Basic_A")
+        hearts = basic_arithmetic(questions[selected_level], hearts)
+    elif topic == "Q":
         print("Goodbye.")
         break
     else:
@@ -140,4 +140,5 @@ while True:
     
     print(f"You have {hearts} hearts left.")
     if hearts <= 0:
+        print("You have no more hearts left. Game over!")
         break
