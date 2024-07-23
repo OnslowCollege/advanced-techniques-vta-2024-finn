@@ -25,14 +25,19 @@ def general_topics_quiz():
 
 
 
-def algebra(Question_info: dict[str, str]):
+def algebra(Question_info: dict[str, str], hearts: int) -> int:
     """
-    Start Algebra topic.
+    Start Fractions topic.
     
-    Parameters
-    ----------
-    -   Question_info: Gives the questions for the user to answer.
-    
+    Parameter
+    ---------
+    - Gives the questions for the user to answer.
+    - Current number of hearts the user has.
+
+    Return
+    ------
+    - New number of hearts.
+
     """
     correct_answers = 0
     for question in Question_info:
@@ -41,11 +46,19 @@ def algebra(Question_info: dict[str, str]):
         if user_answer == answer:
             print("Correct!")
             correct_answers += 1
+            if hearts < 5:
+                hearts += 1
         else:
             print(f"Incorrect. The correct answer is: {answer}")
+            hearts -= 1
+
+        print(f"You have {hearts} hearts left.")
+        if hearts <= 0:
+            print("You have no more hearts left. Game over!")
+            break
 
     print(f"You got {correct_answers} out of {len(Question_info)} questions correct!")
-
+    return hearts
 
 
 def fractions(Question_info: dict[str, str], hearts: int) -> int:
