@@ -140,5 +140,5 @@ while True:
     
     print(f"You have {hearts} hearts left.")
     if hearts <= 0:
-        print("You have no more hearts left. Game over!")
+        print("You have no more hearts left. You lose!")
         break
