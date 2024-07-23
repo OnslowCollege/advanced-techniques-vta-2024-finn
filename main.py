@@ -51,8 +51,6 @@ def algebra(Question_info: dict[str, str], hearts: int) -> int:
         else:
             print(f"Incorrect. The correct answer is: {answer}")
             hearts -= 1
-
-        print(f"You have {hearts} hearts left.")
         if hearts <= 0:
             print("You have no more hearts left. Game over!")
             break
@@ -88,8 +86,6 @@ def fractions(Question_info: dict[str, str], hearts: int) -> int:
         else:
             print(f"Incorrect. The correct answer is: {answer}")
             hearts -= 1
-
-        print(f"You have {hearts} hearts left.")
         if hearts <= 0:
             print("You have no more hearts left. Game over!")
             break
