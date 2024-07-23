@@ -10,7 +10,7 @@ questions: dict[str, dict[str, str]] = {
     "Basic_A_2": {"4x7": "28"},
     "Basic_A_3": {"8x7+2": "58"},
 }
-
+hearts = 5
 
 
 def general_topics_quiz():
