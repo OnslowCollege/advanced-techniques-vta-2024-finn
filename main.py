@@ -16,7 +16,7 @@ def general_topics_quiz(hearts):
     """
     Start All topics quiz.
 
-    Parameters
+    Parameter:
     ----------
     -   hearts: Current number of hearts the user has.
 
@@ -46,12 +46,12 @@ def algebra(Question_info: dict[str, str], hearts: int) -> int:
     """
     Start Algebra topic.
     
-    Parameter
+    Parameter:
     ---------
     - Question_info: Gives the questions for the user to answer.
     - hearts: Current number of hearts the user has.
 
-    Return
+    Return:
     ------
     - New heart balance.
 
@@ -79,19 +79,22 @@ def fractions(Question_info: dict[str, str], hearts: int) -> int:
     """
     Start Fractions topic.
     
-    Parameter
-    ---------
-    - Question_info: Gives the questions for the user to answer.
+    Parameter:
+    ----------
+    - questions: Dictionary of questions and answers.
     - hearts: Current number of hearts the user has.
 
-    Return
+    Return:
     ------
     - New number of hearts.
 
     """
     print("Fractions Quiz")
     correct_answers = 0
-    for question, answer in Question_info.items():
+
+    for item in questions.items():
+        question = item[0]
+        answer = item[1]
         user_answer = input(f"{question} = ")
         if user_answer == answer:
             print("Correct!")
@@ -101,11 +104,12 @@ def fractions(Question_info: dict[str, str], hearts: int) -> int:
         else:
             print(f"Incorrect. The correct answer is: {answer}")
             hearts -= 1
+        
         if hearts <= 0:
             print("You have no more hearts left. Game over!")
             break
 
-    print(f"You got {correct_answers} out of {len(Question_info)} questions correct!")
+    print(f"You got {correct_answers} out of {len(questions)} questions correct!")
     return hearts
 
 
@@ -113,12 +117,12 @@ def basic_arithmetic(Question_info: dict[str, str], hearts: int) -> int:
     """
     Start Basic Arithmetic topic.
     
-    Parameters
+    Parameter:
     ----------
     -   Question_info: Gives the questions for the user to answer.
     -   hearts: Current number of hearts the user has.
 
-    Return
+    Return:
     ------
     - New number of hearts.
 
