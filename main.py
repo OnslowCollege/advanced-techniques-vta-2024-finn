@@ -1,14 +1,14 @@
 """Math Test Mastermind."""
 questions: dict[str, dict[str, str]] = {
-    "Algebra_1": {"If 2x=4 what is x?": "2", "If 3x=9 what is x?": "3", "If x=12 what is x?": "12"},
-    "Algebra_2": {"If 2x-2=6 what is x?": "4"},
-    "Algebra_3": {"If 4x+3=15 what is x?": "3"},
-    "Fractions_1": {"1/2+1/2": "1", "1/3+1/3": "2/3"},
-    "Fractions_2": {"2/3*1/3": "2/9"},
-    "Fractions_3": {"11/3÷2/3": "5/2"},
-    "Basic_A_1": {"3+9": "12"},
-    "Basic_A_2": {"4*7": "28"},
-    "Basic_A_3": {"8*7+2": "58"},
+    "Algebra_1": {"If 2x = 4 what is x?": "2", "If 3x = 9 what is x?": "3", "If x = 12 what is x?": "12"},
+    "Algebra_2": {"If 2x - 2 = 6 what is x?": "4"},
+    "Algebra_3": {"If 4x + 3 = 15 what is x?": "3"},
+    "Fractions_1": {"1/2 + 1/2": "1", "1/3 + 1/3": "2/3"},
+    "Fractions_2": {"2/3 x 1/3": "2/9"},
+    "Fractions_3": {"11/3 ÷ 2/3": "5/2"},
+    "Basic_A_1": {"3 + 9": "12"},
+    "Basic_A_2": {"4 x 7": "28"},
+    "Basic_A_3": {"8 x 7 + 2": "58"},
 }
 
 
