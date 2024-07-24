@@ -23,8 +23,9 @@ def general_topics_quiz(hearts):
     """
     print("Test general topics quiz")
     correct_answers = 0
-    for questions in questions.items():
-        for question, answer in questions.items():
+    for topic in questions.keys():
+        topic_questions = questions[topic]
+        for question, answer in topic_questions.items():
             user_answer = input(f"{question}:  ")
             if user_answer == answer:
                 print("Correct!")
@@ -57,7 +58,8 @@ def algebra(Question_info: dict[str, str], hearts: int) -> int:
 
     """
     correct_answers = 0
-    for question, answer in Question_info.items():
+    for question in Question_info.keys():
+        answer = Question_info[question]
         user_answer = input(f"{question}:  ")
         if user_answer == answer:
             print("Correct!")
@@ -92,10 +94,9 @@ def fractions(Question_info: dict[str, str], hearts: int) -> int:
     print("Fractions Quiz")
     correct_answers = 0
 
-    for item in questions.items():
-        question = item[0]
-        answer = item[1]
-        user_answer = input(f"{question} = ")
+    for question in Question_info.keys():
+        answer = Question_info[question]
+        user_answer = input(f"{question}: ")
         if user_answer == answer:
             print("Correct!")
             correct_answers += 1
@@ -109,7 +110,9 @@ def fractions(Question_info: dict[str, str], hearts: int) -> int:
             print("You have no more hearts left. Game over!")
             break
 
-    print(f"You got {correct_answers} out of {len(questions)} questions correct!")
+    print(
+        f"You got {correct_answers} out of {len(Question_info)} questions correct!"
+    )
     return hearts
 
 
@@ -129,7 +132,8 @@ def basic_arithmetic(Question_info: dict[str, str], hearts: int) -> int:
     """
     print("Basic Arithmetic Quiz")
     correct_answers = 0
-    for question, answer in Question_info.items():
+    for question in Question_info.keys():
+        answer = Question_info[question]
         user_answer = input(f"{question} = ")
         if user_answer == answer:
             print("Correct!")
