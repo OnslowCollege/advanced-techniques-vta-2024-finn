@@ -22,24 +22,6 @@ def general_topics_quiz(hearts):
 
     """
     print("Test general topics quiz")
-    correct_answers = 0
-    for topic in questions.keys():
-        topic_questions = questions[topic]
-        for question, answer in topic_questions.items():
-            user_answer = input(f"{question}:  ")
-            if user_answer == answer:
-                print("Correct!")
-                correct_answers += 1
-                if hearts < 5:
-                    hearts += 1
-            else:
-                print(f"Incorrect. The correct answer is: {answer}")
-                hearts -= 1
-            if hearts <= 0:
-                print("You have no more hearts left. Game over!")
-                return hearts
-
-    print(f"You got {correct_answers} questions correct!")
     return hearts
 
 
