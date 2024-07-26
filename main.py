@@ -26,7 +26,7 @@ def general_topics_quiz(hearts):
     return hearts
 
 
-def algebra(Question_info: dict[str, str], hearts: int) -> int:
+def algebra(question_info: dict[str, str], hearts: int) -> int:
     """
     Start Algebra topic.
     
@@ -41,8 +41,8 @@ def algebra(Question_info: dict[str, str], hearts: int) -> int:
 
     """
     correct_answers = 0
-    for question in Question_info.keys():
-        answer = Question_info[question]
+    for question in question_info.keys():
+        answer = question_info[question]
         user_answer = input(f"{question}:  ")
         if user_answer == answer:
             print("Correct!")
@@ -56,11 +56,11 @@ def algebra(Question_info: dict[str, str], hearts: int) -> int:
             print("You have no more hearts left. Game over!")
             break
 
-    print(f"You got {correct_answers} out of {len(Question_info)} questions correct!")
+    print(f"You got {correct_answers} out of {len(question_info)} questions correct!")
     return hearts
 
 
-def fractions(Question_info: dict[str, str], hearts: int) -> int:
+def fractions(question_info: dict[str, str], hearts: int) -> int:
     """
     Start Fractions topic.
     
@@ -77,8 +77,8 @@ def fractions(Question_info: dict[str, str], hearts: int) -> int:
     print("Fractions Quiz")
     correct_answers = 0
 
-    for question in Question_info.keys():
-        answer = Question_info[question]
+    for question in question_info.keys():
+        answer = question_info[question]
         user_answer = input(f"{question}: ")
         if user_answer == answer:
             print("Correct!")
@@ -94,12 +94,12 @@ def fractions(Question_info: dict[str, str], hearts: int) -> int:
             break
 
     print(
-        f"You got {correct_answers} out of {len(Question_info)} questions correct!"
+        f"You got {correct_answers} out of {len(question_info)} questions correct!"
     )
     return hearts
 
 
-def basic_arithmetic(Question_info: dict[str, str], hearts: int) -> int:
+def basic_arithmetic(question_info: dict[str, str], hearts: int) -> int:
     """
     Start Basic Arithmetic topic.
     
@@ -115,8 +115,8 @@ def basic_arithmetic(Question_info: dict[str, str], hearts: int) -> int:
     """
     print("Basic Arithmetic Quiz")
     correct_answers = 0
-    for question in Question_info.keys():
-        answer = Question_info[question]
+    for question in question_info.keys():
+        answer = question_info[question]
         user_answer = input(f"{question} = ")
         if user_answer == answer:
             print("Correct!")
@@ -130,7 +130,7 @@ def basic_arithmetic(Question_info: dict[str, str], hearts: int) -> int:
             print("You have no more hearts left. Game over!")
             break
 
-    print(f"You got {correct_answers} out of {len(Question_info)} questions correct!")
+    print(f"You got {correct_answers} out of {len(question_info)} questions correct!")
     return hearts
 
 
