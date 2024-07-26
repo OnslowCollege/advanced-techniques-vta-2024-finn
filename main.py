@@ -29,7 +29,7 @@ def general_topics_quiz(hearts):
 def algebra(question_info: dict[str, str], hearts: int) -> int:
     """
     Start Algebra topic.
-    
+
     Parameter:
     ---------
     - Question_info: Gives the questions for the user to answer.
@@ -56,7 +56,8 @@ def algebra(question_info: dict[str, str], hearts: int) -> int:
             print("You have no more hearts left. Game over!")
             break
 
-    print(f"You got {correct_answers} out of {len(question_info)} questions correct!")
+    print(f"You got {correct_answers} out of {len(question_info)}",
+    "questions correct!")
     return hearts
 
 
