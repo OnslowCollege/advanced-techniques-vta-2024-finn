@@ -64,7 +64,7 @@ def algebra(question_info: dict[str, str], hearts: int) -> int:
 def fractions(question_info: dict[str, str], hearts: int) -> int:
     """
     Start Fractions topic.
-    
+
     Parameter:
     ----------
     - questions: Dictionary of questions and answers.
@@ -89,21 +89,19 @@ def fractions(question_info: dict[str, str], hearts: int) -> int:
         else:
             print(f"Incorrect. The correct answer is: {answer}")
             hearts -= 1
-        
         if hearts <= 0:
             print("You have no more hearts left. Game over!")
             break
 
-    print(
-        f"You got {correct_answers} out of {len(question_info)} questions correct!"
-    )
+    print(f"You got {correct_answers} out of {len(question_info)}", 
+    "questions correct!")
     return hearts
 
 
 def basic_arithmetic(question_info: dict[str, str], hearts: int) -> int:
     """
     Start Basic Arithmetic topic.
-    
+
     Parameter:
     ----------
     -   Question_info: Gives the questions for the user to answer.
@@ -131,11 +129,13 @@ def basic_arithmetic(question_info: dict[str, str], hearts: int) -> int:
             print("You have no more hearts left. Game over!")
             break
 
-    print(f"You got {correct_answers} out of {len(question_info)} questions correct!")
+    print(f"You got {correct_answers} out of {len(question_info)}", 
+    "questions correct!")
     return hearts
 
 
 def select_level(topic):
+    """Asks user which level of their topic they will be tested on."""
     while True:
         print("Select a level for {}: ".format(topic))
         print("1. Easy")
@@ -174,7 +174,6 @@ while True:
         break
     else:
         print("Please enter G, A, F, B or Q!")
-    
     print(f"You have {hearts} hearts left.")
     if hearts <= 0:
         print("You have no more hearts left. You lose!")
