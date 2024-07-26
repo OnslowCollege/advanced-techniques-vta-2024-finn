@@ -1,7 +1,7 @@
 """Math Test Mastermind."""
 questions: dict[str, dict[str, str]] = {
-    "Algebra_1": {"If 2x = 4 what is x?": "2", "If 3x = 9 what is x?": "3", 
-    "If x = 12 what is x?": "12"},
+    "Algebra_1": {"If 2x = 4 what is x?": "2", "If 3x = 9 what is x?": "3",
+        "If x = 12 what is x?": "12"},
     "Algebra_2": {"If 2x - 2 = 6 what is x?": "4"},
     "Algebra_3": {"If 4x + 3 = 15 what is x?": "3"},
     "Fractions_1": {"1/2 + 1/2": "1", "1/3 + 1/3": "2/3"},
@@ -57,7 +57,7 @@ def algebra(question_info: dict[str, str], hearts: int) -> int:
             break
 
     print(f"You got {correct_answers} out of {len(question_info)}",
-    "questions correct!")
+        "questions correct!")
     return hearts
 
 
@@ -93,8 +93,8 @@ def fractions(question_info: dict[str, str], hearts: int) -> int:
             print("You have no more hearts left. Game over!")
             break
 
-    print(f"You got {correct_answers} out of {len(question_info)}", 
-    "questions correct!")
+    print(f"You got {correct_answers} out of {len(question_info)}",
+        "questions correct!")
     return hearts
 
 
@@ -129,8 +129,8 @@ def basic_arithmetic(question_info: dict[str, str], hearts: int) -> int:
             print("You have no more hearts left. Game over!")
             break
 
-    print(f"You got {correct_answers} out of {len(question_info)}", 
-    "questions correct!")
+    print(f"You got {correct_answers} out of {len(question_info)}",
+        "questions correct!")
     return hearts
 
 
@@ -147,13 +147,12 @@ def select_level(topic):
         else:
             print("Please enter a number between 1 and 3!")
 
-
 hearts = 5
 while True:
     print("Welcome to Math Test Mastermind \n----------------------------")
     print(
         "Choose a topic to work on: \n -",
-        "(G)eneral Topics Quiz \n - (A)lgebra \n - (F)ractions", 
+        "(G)eneral Topics Quiz \n - (A)lgebra \n - (F)ractions",
         "\n - (B)asic Arithmetic \n - (Q)uit "
     )
 
