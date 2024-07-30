@@ -23,7 +23,7 @@ questions: dict[str, dict[str, str]] = {
         "If 11y + 6 = 3y + 46 what is y?": "5"},
     "Fractions_1": {"What is 1/2 + 1/2?": "1", "What is 1/3 + 1/3?": "2/3", 
         "What is 1/4 + 1/2?": "3/4", "What is 3/5 - 1/5?": "2/5", 
-        "What is 2/3 x 3/4?": "1/2"},
+        "What is 2/3 x 3/4?": "1/2", "What is 3/8 - 1/8": "1/4", ""},
     "Fractions_2": {"2/3 x 1/3": "2/9"},
     "Fractions_3": {"11/3 ÷ 2/3": "5/2"},
     "Basic_A_1": {"3 + 9": "12"},
