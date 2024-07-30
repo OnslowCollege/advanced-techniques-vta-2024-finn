@@ -7,7 +7,7 @@ questions: dict[str, dict[str, str]] = {
         "If 6z = 18 what is z?": "3", "If 5x = 25 what is x?": "5"},
     "Algebra_2": {"If 2x - 2 = 6 what is x?": "4", 
         "If 4y + 2 = 10 what is y?": "2", "If 4x - 4 = 12 what is x?": "4", 
-        "If 12z - 5 = 19 what is z?": "2", "If 8y x 2 = "},
+        "If 12z - 5 = 19 what is z?": "2", "If 8y x 2 = 16 what is y?": "1"},
     "Algebra_3": {"If 4x + 3 = 15 what is x?": "3"},
     "Fractions_1": {"1/2 + 1/2": "1", "1/3 + 1/3": "2/3"},
     "Fractions_2": {"2/3 x 1/3": "2/9"},
