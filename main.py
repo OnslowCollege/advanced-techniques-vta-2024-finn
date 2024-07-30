@@ -11,7 +11,7 @@ questions: dict[str, dict[str, str]] = {
         "What is x if 2(x + 1) = 18?": "2", "What is z if 8z x 3 = 48?": "2", 
         "4(x + 2) = 24 what is x?": "4","If 3x = 20 - 8 what is x?": "4",
         "If 10y = 75 - 5 what is y?": "7",},
-    "Algebra_3": {"If c - 20 = 4 - 3c what is c?": "6", 
+    "Algebra_3": {"If c - 20 = 4c what is c?": "6", 
         "If -4(-3n - 8) = 10n + 20 what is n?": "-6", },
     "Fractions_1": {"1/2 + 1/2": "1", "1/3 + 1/3": "2/3"},
     "Fractions_2": {"2/3 x 1/3": "2/9"},
