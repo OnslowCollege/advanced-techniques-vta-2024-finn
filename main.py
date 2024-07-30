@@ -1,8 +1,8 @@
 """Math Test Mastermind."""
 questions: dict[str, dict[str, str]] = {
     "Algebra_1": {"If 2x = 4 what is x?": "2", "If 3x = 9 what is x?": "3",
-        "If x = 12 what is x?": "12", "If 5y = 10 what is y?": "2", 
-        "If 2y = 10 what is y?": "5", "If 3x = 6 what is x?": "2", 
+        "If x + 2= 14 what is x?": "12", "If 5y + 2 = 12 what is y?": "2", 
+        "If 2y - 4 = 6 what is y?": "5", "If 3x = 6 what is x?": "2", 
         "If y = 16 what is y?": "16", "If 4x = 16 what is x?": "4", 
         "If 6z = 18 what is z?": "3", "If 5x = 25 what is x?": "5"},
     "Algebra_2": {"If 2x ÷ 10 = 2 what is x?": "10", 
@@ -10,7 +10,7 @@ questions: dict[str, dict[str, str]] = {
         "If 12z - 5 = 19 what is z?": "2", "If 8y x 3 = 24 what is y?": "1", 
         "What is x if 2(x + 1) = 18?": "2", "What is z if 8z x 3 = 48?": "2", 
         "4(x + 2) = 24 what is x?": "4","If 3x = 20 - 8 what is x?": "4",
-        },
+        "If 10y = 75 - 5 what is y?": "7",},
     "Algebra_3": {"If 4x + 3 = 15 what is x?": "3"},
     "Fractions_1": {"1/2 + 1/2": "1", "1/3 + 1/3": "2/3"},
     "Fractions_2": {"2/3 x 1/3": "2/9"},
