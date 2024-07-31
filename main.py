@@ -29,7 +29,7 @@ questions: dict[str, dict[str, str]] = {
     "Fractions_2": {"What is 5/12 ÷ 2/3?": "5/8", "What is 4/9 x 3/7?": "4/21", 
         "What is 15/4 x 8/3?": "10", "What is 18/25 x 15/24?": "9/20", 
         "What is 14/27 ÷ 7/9?": "2/3", "What is 11/15 - 5/8?": "13/120", 
-        "What is 7/9 x 5/6?": "35/54" },
+        "What is 7/9 x 5/6?": "35/54", "What is 13/"},
     "Fractions_3": {"11/3 ÷ 2/3": "5/2"},
     "Basic_A_1": {"3 + 9": "12"},
     "Basic_A_2": {"4 x 7": "28"},
