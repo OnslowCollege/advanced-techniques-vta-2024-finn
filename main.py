@@ -8,7 +8,7 @@ questions: dict[str, dict[str, str]] = {
     "Algebra_2": {"If 2x ÷ 10 = 2 what is x?": "10", 
         "If 4y ÷ 2 = 12 what is y?": "6", "If 6x - 4 = 32 what is x?": "6", 
         "If 12z - 5 = 19 what is z?": "2", "If 8y x 3 = 24 what is y?": "1", 
-        "What is x if 2(x + 1) = 18?": "2", "What is z if 8z x 3 = 48?": "2", 
+        "What is x if 2(x + 1) = 18?": "8", "What is z if 8z x 3 = 48?": "2", 
         "4(x + 2) = 24 what is x?": "4","If 3x = 20 - 8 what is x?": "4",
         "If 10y = 75 - 5 what is y?": "7",},
     "Algebra_3": {"If c - 20 = 4 - 3c what is c?": "6", 
