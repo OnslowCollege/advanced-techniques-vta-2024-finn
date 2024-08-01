@@ -24,7 +24,7 @@ questions: dict[str, dict[str, str]] = {
     "Fractions_1": {"What is 1/2 + 1/2?": "1", "What is 1/3 + 1/3?": "2/3", 
         "What is 1/4 + 1/2?": "3/4", "What is 3/5 - 1/5?": "2/5", 
         "What is 2/3 x 3/4?": "1/2", "What is 3/8 - 1/8": "1/4", 
-        "What is 3/4 x 2/3?": "1/2", "What is 1/2 + 2/8?": "3/4", 
+        "What is 2/4 x 1/3?": "1/6", "What is 1/2 + 2/8?": "3/4", 
         "What is 4/5 x 1/2?": "2/5", "What is 2/5 x 3/5?": "6/35"},
     "Fractions_2": {"What is 5/12 ÷ 2/3?": "5/8", "What is 4/9 x 3/7?": "4/21",
         "What is 15/4 x 8/3?": "10", "What is 18/25 x 15/24?": "9/20", 
