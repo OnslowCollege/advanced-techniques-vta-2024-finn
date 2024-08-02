@@ -35,8 +35,8 @@ questions: dict[str, dict[str, str]] = {
     "Basic_A_1": {"What is 12 ÷ 2?": "6", "What is 22 + 48?": "70", 
         "What is 14.5 - 10?": "4.5", "What is 10 x 5?": "50", 
         "What is 5.5 + 7.5?": "13", "What is 32 + 16?": "48", 
-        "What is 6 - 13?": "7", "What is 14 x 2?": "28", 
-        "What is 24 ÷ 6?": "4", },
+        "What is 13.3 - 6?": "7.3", "What is 14 x 2?": "28", 
+        "What is 24 ÷ 6?": "4", "What is 18 - 14.2?": "3,8"},
     "Basic_A_2": {"4 x 7": "28"},
     "Basic_A_3": {"8 x 7 + 2": "58"},
 }
