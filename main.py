@@ -31,7 +31,7 @@ questions: dict[str, dict[str, str]] = {
         "What is 14/27 ÷ 7/9?": "2/3", "What is 11/15 - 5/8?": "13/120", 
         "What is 7/9 x 5/6?": "35/54", "Simplify 24/36": "2/3", 
         "Simplify 35/50": "7/10", "Simplify 14/21": "2/3"},
-    "Fractions_3": {"11/3 ÷ 2/3": "5/2"},
+    "Fractions_3": {"2/3(1/5 + 3/4)": "19/30", },
     "Basic_A_1": {"3 + 9": "12"},
     "Basic_A_2": {"4 x 7": "28"},
     "Basic_A_3": {"8 x 7 + 2": "58"},
