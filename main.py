@@ -32,7 +32,7 @@ questions: dict[str, dict[str, str]] = {
         "What is 7/9 x 5/6?": "35/54", "Simplify 24/36": "2/3", 
         "Simplify 35/50": "7/10", "Simplify 14/21": "2/3"},
     "Fractions_3": {"2/3(1/5 + 3/4)": "19/30", },
-    "Basic_A_1": {"3 + 9": "12"},
+    "Basic_A_1": {"12 + 15": "27", "22 + 48": "70", },
     "Basic_A_2": {"4 x 7": "28"},
     "Basic_A_3": {"8 x 7 + 2": "58"},
 }
