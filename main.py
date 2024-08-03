@@ -52,7 +52,7 @@ def general_topics_quiz(hearts):
 
     """
     print("Test general topics quiz")
-    return hearts
+    #return hearts
 
 
 def algebra(question_info: dict[str, str], hearts: int) -> int:
