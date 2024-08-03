@@ -42,7 +42,7 @@ questions: dict[str, dict[str, str]] = {
 }
 
 
-def general_topics_quiz(hearts):
+def general_topics_quiz():
     """
     Start All topics quiz.
 
@@ -52,7 +52,7 @@ def general_topics_quiz(hearts):
 
     """
     print("Test general topics quiz")
-    return hearts
+
 
 
 def algebra(question_info: dict[str, str], hearts: int) -> int:
@@ -187,7 +187,7 @@ while True:
 
     topic = input("What topic would you like to study: ").upper()
     if topic == "G":
-        hearts = general_topics_quiz(hearts)
+        general_topics_quiz()
     elif topic == "A":
         selected_level = select_level("Algebra")
         hearts = algebra(questions[selected_level], hearts)
