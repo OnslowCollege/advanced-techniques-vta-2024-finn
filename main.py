@@ -1,9 +1,9 @@
 """Math Test Mastermind."""
 questions: dict[str, dict[str, str]] = {
     "Algebra_1": {"If 2x = 4 what is x?": "2", "If 3x = 9 what is x?": "3",
-        "If x + 2 = 10 what is x?": "8", "If 5y + 2 = 12 what is y?": "2", 
+        "If x + 2 = 10 what is x?": "8", "If 5y + 2 = 12 what is y?": "2",
         "If 2y - 4 = 6 what is y?": "5", "If 3x = 6 what is x?": "2",
-        "If y = 16 what is y?": "16", "If 4x = 16 what is x?": "4", 
+        "If y = 16 what is y?": "16", "If 4x = 16 what is x?": "4",
         "If 6z = 18 what is z?": "3", "If 5x = 25 what is x?": "5"},
     "Algebra_2": {"If 2x ÷ 10 = 2 what is x?": "10",
         "If 4y ÷ 2 = 12 what is y?": "6", "If 6x - 4 = 32 what is x?": "6",
