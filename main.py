@@ -31,7 +31,7 @@ questions: dict[str, dict[str, str]] = {
         "What is 14/27 ÷ 7/9?": "2/3", "What is 11/15 - 5/8?": "13/120",
         "What is 7/9 x 5/6?": "35/54", "Simplify 24/36": "2/3",
         "Simplify 35/50": "7/10", "Simplify 14/21": "2/3"},
-    "Fractions_3": {"What is 2/3(1/5 + 3/4)?": "19/30", 
+    "Fractions_3": {"What is 2/3(1/5 + 3/4)?": "19/30",
         "What is 3/4(1/2 + 1/3)?": "5/8", "What is 5/6(2/5 + 1/4?)?": "13/24", 
         "What is 4/5(3/8 + 1/2)?": "7/10", "What is 2/3(1/4 + 3/5)?": "17/30", 
         "What is 5/6(2/5 - 1/4?)?": "1/8", "What is 3/5(1/4 - 2/3)?": "1/10", 
@@ -52,7 +52,8 @@ questions: dict[str, dict[str, str]] = {
         "What is 9 x 4 - 6 ÷ 3?": "34", "What is 10 + 6 x 2 ÷ 4?": "13", 
         "What is 14 x 3 ÷ 7- 1?": "5", "What is 16 - 8 x 2 ÷ 4?": "12", 
         "What is 20 x 9 ÷ (15 + 3)?": "10", "What is (18 - 6) x 5 ÷ 2?": "30", 
-        "What is 21 + 6 ÷ 3 x 2?": "25", "What is 9 x (4 - 6) ÷ (3 + 1)?": "-4.5",}
+        "What is 21 + 6 ÷ 3 x 2?": "25", 
+        "What is 9 x (4 - 6) ÷ (3 + 1)?": "-4.5",}
 }
 
 
