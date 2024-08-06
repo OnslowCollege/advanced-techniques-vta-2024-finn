@@ -205,6 +205,7 @@ def select_level(topic):
         else:
             print("Please enter a number between 1 and 3!")
 
+
 hearts = 5
 while True:
     print("Welcome to Math Test Mastermind \n----------------------------")
