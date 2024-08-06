@@ -115,7 +115,7 @@ def algebra(question_info: dict[str, str], hearts: int) -> int:
             break
 
     print(f"You got {correct_answers} out of {len(question_info)}",
-           "questions correct!")
+          "questions correct!")
     return hearts
 
 
@@ -152,7 +152,7 @@ def fractions(question_info: dict[str, str], hearts: int) -> int:
             break
 
     print(f"You got {correct_answers} out of {len(question_info)}",
-           "questions correct!")
+          "questions correct!")
     return hearts
 
 
@@ -188,7 +188,7 @@ def basic_arithmetic(question_info: dict[str, str], hearts: int) -> int:
             break
 
     print(f"You got {correct_answers} out of {len(question_info)}",
-        "questions correct!")
+          "questions correct!")
     return hearts
 
 
