@@ -105,7 +105,7 @@ def algebra(question_info: dict[str, str], hearts: int) -> int:
         if user_answer == answer:
             print("Correct!")
             correct_answers += 1
-            if hearts < 5:
+            if hearts <= 5:
                 hearts += 1
         else:
             print(f"Incorrect. The correct answer is: {answer}, test hearts: {hearts}")
