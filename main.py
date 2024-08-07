@@ -184,7 +184,7 @@ def basic_arithmetic(question_info: dict[str, str], hearts: int) -> int:
                 hearts += 1
         else:
             hearts -= 1
-            print(f"Incorrect. The correct answer is: {answer}, "),
+            print(f"Incorrect. The correct answer is: {answer},")
             print(f"Test hearts: {hearts}")
         if hearts <= 0:
             print("You have no more hearts left. Game over!")
