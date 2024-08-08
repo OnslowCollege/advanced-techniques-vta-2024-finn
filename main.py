@@ -198,7 +198,7 @@ def basic_arithmetic(question_info: dict[str, str], hearts: int) -> int:
 def select_level(topic):
     """Asks user which level of their topic they will be tested on."""
     while True:
-        print(f"test heart number entering test:    {hearts}")
+        print(f"test heart number entering test: {hearts}")
         print("Select a level for {}: ".format(topic))
         print("1. Easy")
         print("2. Medium")
