@@ -104,8 +104,8 @@ def algebra(question_info: dict[str, str], hearts: int) -> int:
         user_answer = input(f"{question}:  ")
         if user_answer == answer:
             print(f"Correct! Test hearts: {hearts}")
-            correct_answers += 1
-            if hearts <= 5:
+            correct_answers + 1
+            if hearts < 5:
                 hearts += 1
         else:
             hearts -= 1
