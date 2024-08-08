@@ -136,18 +136,17 @@ def fractions(question_info: dict[str, str], hearts: int) -> int:
     """
     print("Fractions Quiz")
     correct_answers = 0
-
     for question in question_info.keys():
         answer = question_info[question]
-        user_answer = input(f"{question}: ")
+        user_answer = input(f"{question}:  ")
         if user_answer == answer:
             correct_answers += 1
+            print(f"Correct! Test hearts: {hearts + 1 if hearts < 5 else hearts}")
             if hearts < 5:
                 hearts += 1
-                print(f"Correct! Test hearts: {hearts}")
         else:
             hearts -= 1
-            print(f"Incorrect. The correct answer is: {answer}"),
+            print(f"Incorrect. The correct answer is: {answer}")
             print(f"Test hearts: {hearts}")
         if hearts <= 0:
             print("You have no more hearts left. Game over!")
@@ -176,12 +175,12 @@ def basic_arithmetic(question_info: dict[str, str], hearts: int) -> int:
     correct_answers = 0
     for question in question_info.keys():
         answer = question_info[question]
-        user_answer = input(f"{question} = ")
+        user_answer = input(f"{question}:  ")
         if user_answer == answer:
             correct_answers += 1
+            print(f"Correct! Test hearts: {hearts + 1 if hearts < 5 else hearts}")
             if hearts < 5:
                 hearts += 1
-                print(f"Correct! Test hearts: {hearts}")
         else:
             hearts -= 1
             print(f"Incorrect. The correct answer is: {answer}")
