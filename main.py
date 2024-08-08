@@ -98,6 +98,7 @@ def algebra(question_info: dict[str, str], hearts: int) -> int:
     - New heart balance.
 
     """
+    correct_answers = 0
     for question in question_info.keys():
         answer = question_info[question]
         user_answer = input(f"{question}:  ")
@@ -110,7 +111,6 @@ def algebra(question_info: dict[str, str], hearts: int) -> int:
             hearts -= 1
             print(f"Incorrect. The correct answer is: {answer}")
             print(f"Test hearts: {hearts}")
-        
         if hearts <= 0:
             print("You have no more hearts left. Game over!")
             break
