@@ -103,8 +103,8 @@ def algebra(question_info: dict[str, str], hearts: int) -> int:
         answer = question_info[question]
         user_answer = input(f"{question}:  ")
         if user_answer == answer:
-            print("Correct!")
             correct_answers += 1
+            print(f"Correct! Test hearts: {hearts}")
             if hearts <= 5:
                 hearts += 1
         else:
@@ -141,8 +141,8 @@ def fractions(question_info: dict[str, str], hearts: int) -> int:
         answer = question_info[question]
         user_answer = input(f"{question}: ")
         if user_answer == answer:
-            print("Correct!")
             correct_answers += 1
+            print(f"Correct! Test hearts: {hearts}")
             if hearts < 5:
                 hearts += 1
         else:
@@ -178,8 +178,8 @@ def basic_arithmetic(question_info: dict[str, str], hearts: int) -> int:
         answer = question_info[question]
         user_answer = input(f"{question} = ")
         if user_answer == answer:
-            print("Correct!")
             correct_answers += 1
+            print(f"Correct! Test hearts: {hearts}")
             if hearts < 5:
                 hearts += 1
         else:
